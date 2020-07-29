@@ -5,9 +5,6 @@ function App() {
   return (
     <div>
       <Menu />
-      <header>
-        Resetamos
-      </header>
     </div>
   );
 }
