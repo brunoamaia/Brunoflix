@@ -46,6 +46,7 @@ function App() {
       category = {dadosIniciais.categorias[5]}
     />
 
+    <Footer />
     </div>
   );
 }
