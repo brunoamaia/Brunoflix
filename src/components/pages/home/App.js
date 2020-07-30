@@ -5,7 +5,7 @@ import BannerMain from '../../BannerMain'
 import Carousel from '../../Carousel'
 import Footer from '../../Footer'
 
-function App() {
+function Home() {
   return (
     <div>
       <Menu />
@@ -51,4 +51,4 @@ function App() {
   );
 }
 
-export default App;
+export default Home;
