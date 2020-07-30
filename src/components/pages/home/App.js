@@ -1,9 +1,9 @@
 import React from 'react';
-import Menu from './components/Menu'  // Como o arquivo tem o nome de "index", não precisa colocar o nome
-import dadosIniciais from './data/dados_iniciais.json'
-import BannerMain from './components/BannerMain'
-import Carousel from './components/Carousel'
-import Footer from './components/Footer'
+import Menu from '../../Menu'  // Como o arquivo tem o nome de "index", não precisa colocar o nome
+import dadosIniciais from '../../../data/dados_iniciais.json'
+import BannerMain from '../../BannerMain'
+import Carousel from '../../Carousel'
+import Footer from '../../Footer'
 
 function App() {
   return (
