@@ -18,13 +18,13 @@ const Main = styled.main`
 // Forma de pegar os componentes "abrindo os elementos"
 function PageDefault( {children} ) {
     return (
-        <div>
+        <>
             <Menu />
             <Main>
                 {children}
             </Main>
             <Footer />
-        </div>
+        </>
     )
 }
 
