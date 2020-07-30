@@ -10,43 +10,48 @@ function Home() {
     <div>
       <Menu />
 
-    <BannerMain 
-      videoTitle = {dadosIniciais.categorias[0].videos[0].titulo}
-      url = {dadosIniciais.categorias[0].videos[0].url}
-      videoDescription = {"O que é Front-end? Descubra muita coisa com a Vanessa!!!"}
-    />
+  
+      <h1 style={{textAlign: "center"}}> 
+        A plataforma etá em desenvolvimento <br/>
+      </h1>
 
-    <Carousel 
-      ignoreFirstVideo
-      category = {dadosIniciais.categorias[0]}
-    />
+      <BannerMain 
+        videoTitle = {dadosIniciais.categorias[0].videos[0].titulo}
+        url = {dadosIniciais.categorias[0].videos[0].url}
+        videoDescription = {"O que é Front-end? Descubra muita coisa com a Vanessa!!!"}
+      />
 
-    <Carousel 
-      ignoreFirstVideo
-      category = {dadosIniciais.categorias[1]}
-    />
+      <Carousel 
+        ignoreFirstVideo
+        category = {dadosIniciais.categorias[0]}
+      />
 
-    <Carousel 
-      ignoreFirstVideo
-      category = {dadosIniciais.categorias[2]}
-    />
+      <Carousel 
+        ignoreFirstVideo
+        category = {dadosIniciais.categorias[1]}
+      />
 
-    <Carousel 
-      ignoreFirstVideo
-      category = {dadosIniciais.categorias[3]}
-    />
+      <Carousel 
+        ignoreFirstVideo
+        category = {dadosIniciais.categorias[2]}
+      />
 
-    <Carousel 
-      ignoreFirstVideo
-      category = {dadosIniciais.categorias[4]}
-    />
+      <Carousel 
+        ignoreFirstVideo
+        category = {dadosIniciais.categorias[3]}
+      />
 
-    <Carousel 
-      ignoreFirstVideo
-      category = {dadosIniciais.categorias[5]}
-    />
+      <Carousel 
+        ignoreFirstVideo
+        category = {dadosIniciais.categorias[4]}
+      />
 
-    <Footer />
+      <Carousel 
+        ignoreFirstVideo
+        category = {dadosIniciais.categorias[5]}
+      />
+
+      <Footer />
     </div>
   );
 }

@@ -10,7 +10,8 @@
   --blackLighter: #9E9E9E;
   --grayLight: #F5F5F5;
   --grayMedium: #e5e5e5; 
-  --white: #FFFFFF;
+  /*--white: #FFFFFF;*/
+  --white: #0CA96C;
   --frontEnd: #6BD1FF;
   --backEnd: #00C86F;
 }
@@ -18,6 +19,7 @@
 html,
 body {
   background: #141414;
+  color: #0CA96C;
   margin: 0;
   padding: 0;
 }
