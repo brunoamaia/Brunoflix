@@ -1,3 +1,4 @@
+/* eslint-disable spaced-comment */
 /* eslint-disable linebreak-style */
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
@@ -5,14 +6,7 @@ import PageDefault from '../../../PageDefault';
 import FormField from '../../../FormField';
 import Button from '../../../Button';
 
-function CadastroCategoria() {
-  const valoresIniciais = {
-    nome: '',
-    descricao: '',
-    cor: '#0CA96C',
-  };
-
-  const [categorias, setCategorias] = useState([]);
+function useForm(valoresIniciais) {
   const [valores, setValores] = useState(valoresIniciais);
 
   function setValor(chave, valor) {
@@ -30,6 +24,46 @@ function CadastroCategoria() {
       value,
     );
   }
+
+  function clearForm() {
+    setValores(valoresIniciais);
+  }
+
+  return {
+    valores,
+    handleChange,
+    clearForm,
+  }
+}
+
+function CadastroCategoria() {
+  const valoresIniciais = {
+    nome: '',
+    descricao: '',
+    cor: '#0CA96C',
+  };
+
+  const {valores, handleChange, clearForm} = useForm(valoresIniciais)
+
+  const [categorias, setCategorias] = useState([]);
+  /*
+  const [valores, setValores] = useState(valoresIniciais);
+
+  function setValor(chave, valor) {
+    // Chave é a variável passada (nome, descrição, cor)
+    setValores({
+      ...valores,
+      [chave]: valor, // nome: 'valor'
+    });
+  }
+
+  function handleChange(infosDoEvento) {
+    const { name, value } = infosDoEvento.target;
+    setValor(
+      name,
+      value,
+    );
+  }*/
 
   useEffect(() => {
     // eslint-disable-next-line camelcase
@@ -61,7 +95,7 @@ function CadastroCategoria() {
           valores,
         ]);
 
-        setValores(valoresIniciais);
+        clearForm();
       }}
       >
 
