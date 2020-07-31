@@ -9,7 +9,7 @@ function CadastroCategoria() {
   const valoresIniciais = {
     nome: '',
     descricao: '',
-    cor: "#0CA96C",
+    cor: '#0CA96C',
   };
 
   const [categorias, setCategorias] = useState([]);
@@ -92,7 +92,7 @@ function CadastroCategoria() {
       </form>
 
       <ul>
-        {categorias.map((categoria, indice) => (
+        {categorias.map((categoria) => (
           <li key={`${categoria.nome}`}>
             {categoria.nome}
           </li>
