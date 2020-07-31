@@ -2,7 +2,7 @@
     "categorias": [
       {
         "id": 1,
-        "nome": "Front End",
+        "titulo": "Front End",
         "cor": "#6BD1FF",
         "link_extra": {
           "text": "Formação de Front End na Alura",
@@ -11,7 +11,7 @@
       },
       {
         "id": 2,
-        "nome": "Back End",
+        "titulo": "Back End",
         "cor": "#00C86F",
         "link_extra": {
           "text": "Cursos de Back End na Alura",
@@ -20,7 +20,7 @@
       },
       {
         "id": 3,
-        "nome": "Data Science e Inteligência Artificial",
+        "titulo": "Data Science e Inteligência Artificial",
         "cor": "#9cd33b",
         "link_extra": {
           "text": "Cursos de Data Science na Alura",
@@ -29,12 +29,12 @@
       },
       {
         "id": 4,
-        "nome": "Filmes",
+        "titulo": "Filmes",
         "cor": "orange"
       },
       {
         "id": 5,
-        "nome": "Games",
+        "titulo": "Games",
         "cor": "red",
         "link_extra": {
           "text": "Formação de Jogos na Alura",
