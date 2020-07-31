@@ -35,7 +35,7 @@ function CadastroCategoria() {
     // eslint-disable-next-line camelcase
     const URL_TEMP = window.location.href.includes('localhost')
       ? 'http://localhost:8080/categorias'
-      : 'https://brunomaiaflix.herokuapp.com/cadastros';
+      : 'https://brunomaiaflix.herokuapp.com/categorias';
     fetch(URL_TEMP)
       .then(async (respostaDoServidor) => {
         if (respostaDoServidor.ok) {
