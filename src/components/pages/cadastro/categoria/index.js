@@ -1,70 +1,75 @@
-import React, { useState } from 'react'
-import PageDefault from '../../../PageDefault'
-import { Link } from 'react-router-dom'
-import FormField from '../../../FormField'
+/* eslint-disable linebreak-style */
+import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
+import PageDefault from '../../../PageDefault';
+import FormField from '../../../FormField';
+import Button from '../../../Button';
 
 function CadastroCategoria() {
   const valoresIniciais = {
     nome: '',
     descricao: '',
-    cor: "0CA96C",
-  }
+    cor: "#0CA96C",
+  };
 
-  const [categorias, setCategorias] = useState([])
-  const [valores, setValores] = useState(valoresIniciais)
-
+  const [categorias, setCategorias] = useState([]);
+  const [valores, setValores] = useState(valoresIniciais);
 
   function setValor(chave, valor) {
     // Chave é a variável passada (nome, descrição, cor)
     setValores({
       ...valores,
-      [chave]: valor,  // nome: 'valor'
-    })
+      [chave]: valor, // nome: 'valor'
+    });
   }
 
   function handleChange(infosDoEvento) {
-    const {name, value} = infosDoEvento.target;
+    const { name, value } = infosDoEvento.target;
     setValor(
       name,
-      value
+      value,
     );
   }
-  
-  return(
+
+  return (
     <PageDefault>
-    <h1>Cadastro de Categoria: {valores.nome}</h1>
-    
-    <form onSubmit={function handleSubmit(infosDoEvento) {
-      infosDoEvento.preventDefault()
-      setCategorias([
-        ...categorias,    // Os 3 pontos servem para mostrar todos os dados que estão no array
-        valores
-      ])
+      <h1>
+        Cadastro de Categoria:
+        {valores.nome}
+      </h1>
 
-      setValores(valoresIniciais)
-    }}>
+      <form onSubmit={function handleSubmit(infosDoEvento) {
+        infosDoEvento.preventDefault();
+        setCategorias([
+          ...categorias, // Os 3 pontos servem para mostrar todos os dados que estão no array
+          valores,
+        ]);
 
-      <FormField 
-        label="Nome da Categoria:"
-        type="text"
-        name="nome"
-        value={valores.nome}
-        onChange={handleChange}
-      />
+        setValores(valoresIniciais);
+      }}
+      >
 
-      <FormField 
-        label="Descrição:"
-        type="textarea"
-        name="descricao"
-        value={valores.descricao}
-        onChange={handleChange}
-      />
+        <FormField
+          label="Nome da Categoria:"
+          type="text"
+          name="nome"
+          value={valores.nome}
+          onChange={handleChange}
+        />
 
-      {/*
+        <FormField
+          label="Descrição:"
+          type="textarea"
+          name="descricao"
+          value={valores.descricao}
+          onChange={handleChange}
+        />
+
+        {/*
       <div>
         <label>
-          Descrição:  
-          <textarea  
+          Descrição:
+          <textarea
             type="text"
             value={valores.descricao}
             name="descricao"
@@ -73,34 +78,32 @@ function CadastroCategoria() {
         </label>
       </div> */}
 
-      <FormField 
-        label="Cor:"
-        type="color"
-        name="nome"
-        value={valores.cor}
-        onChange={handleChange}
-      />
-    
-      <button>
-        Cadastrar
-      </button>
-    </form>
+        <FormField
+          label="Cor:"
+          type="color"
+          name="cor"
+          value={valores.cor}
+          onChange={handleChange}
+        />
 
-    <ul>
-      {categorias.map((categoria, indice) => {
-        return (
-          <li key={`${categoria}${indice}`}> 
+        <Button>
+          Cadastrar
+        </Button>
+      </form>
+
+      <ul>
+        {categorias.map((categoria, indice) => (
+          <li key={`${categoria.nome}`}>
             {categoria.nome}
           </li>
-        )
-      })}
-    </ul>
-    
-    <Link to="/">
-    Ir para Home
-    </Link>
+        ))}
+      </ul>
+
+      <Link to="/">
+        Ir para Home
+      </Link>
     </PageDefault>
-    )
-  }
-  
-  export default CadastroCategoria
+  );
+}
+
+export default CadastroCategoria;
