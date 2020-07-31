@@ -17,6 +17,7 @@
   },
   "scripts": {
     "server": "node ./sever.js",
+    "dev": "concurrently \"react-scripts start\" \"node ./server.js\"",
     "start": "npm run server",
     "build": "react-scripts build",
     "test": "react-scripts test",
@@ -38,6 +39,7 @@
     ]
   },
   "devDependencies": {
+    "concurrently": "^5.2.0",
     "eslint": "^6.6.0",
     "eslint-config-airbnb": "^18.2.0",
     "eslint-plugin-import": "^2.22.0",
