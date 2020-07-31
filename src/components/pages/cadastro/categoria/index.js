@@ -31,19 +31,20 @@ function CadastroCategoria() {
     );
   }
 
-
   useEffect(() => {
+    if (window.location.href.includes('localhost')) {
     // eslint-disable-next-line camelcase
-    const URL_cat = 'http://localhost:8080/categorias';
-    fetch(URL_cat)
-      .then(async (respostaDoServidor) => {
-        const resposta = await respostaDoServidor.json();
-        setCategorias([
-          ...resposta,
-        ]);
-      });
-
-
+      const URL_cat = 'http://localhost:8080/categorias';
+      fetch(URL_cat)
+        .then(async (respostaDoServidor) => {
+          if (respostaDoServidor.ok) {
+            const resposta = await respostaDoServidor.json();
+            setCategorias(resposta);
+            return;
+          }
+          throw new Error('Não possível carregar os dados');
+        });
+    }
   }, []);
 
   return (
@@ -105,7 +106,6 @@ function CadastroCategoria() {
           Cadastrar
         </Button>
       </form>
-
 
       {categorias.length === 0 && (
         <div>
