@@ -7,17 +7,17 @@ import Button from '../../../Button';
 import useForm from '../../../hooks/useForm';
 
 function CadastroCategoria() {
-  const valoresIniciais = {
+  const valuesIniciais = {
     nome: '',
     descricao: '',
     cor: '#0CA96C',
   };
 
-  const { valores, handleChange, clearForm } = useForm(valoresIniciais);
+  const { values, handleChange, clearForm } = useForm(valuesIniciais);
 
   const [categorias, setCategorias] = useState([]);
   /*
-  const [valores, setValores] = useState(valoresIniciais);
+  const [valores, setValores] = useState(valuesIniciais);
 
   function setValor(chave, valor) {
     // Chave é a variável passada (nome, descrição, cor)
@@ -55,14 +55,14 @@ function CadastroCategoria() {
     <PageDefault>
       <h1>
         Cadastro de Categoria:
-        {valores.nome}
+        {values.nome}
       </h1>
 
       <form onSubmit={function handleSubmit(infosDoEvento) {
         infosDoEvento.preventDefault();
         setCategorias([
           ...categorias, // Os 3 pontos servem para mostrar todos os dados que estão no array
-          valores,
+          values,
         ]);
 
         clearForm();
@@ -73,7 +73,7 @@ function CadastroCategoria() {
           label="Nome da Categoria:"
           type="text"
           name="nome"
-          value={valores.nome}
+          value={values.nome}
           onChange={handleChange}
         />
 
@@ -81,7 +81,7 @@ function CadastroCategoria() {
           label="Descrição:"
           type="textarea"
           name="descricao"
-          value={valores.descricao}
+          value={values.descricao}
           onChange={handleChange}
         />
 
@@ -91,7 +91,7 @@ function CadastroCategoria() {
           Descrição:
           <textarea
             type="text"
-            value={valores.descricao}
+            value={values.descricao}
             name="descricao"
             onChange={handleChange}
           />
@@ -102,7 +102,7 @@ function CadastroCategoria() {
           label="Cor:"
           type="color"
           name="cor"
-          value={valores.cor}
+          value={values.cor}
           onChange={handleChange}
         />
 

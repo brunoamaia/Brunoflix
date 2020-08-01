@@ -2,12 +2,12 @@
 import { useState } from 'react';
 
 function useForm(valoresIniciais) {
-  const [valores, setValores] = useState(valoresIniciais);
+  const [values, setValores] = useState(valoresIniciais);
 
   function setValor(chave, valor) {
     // Chave é a variável passada (nome, descrição, cor)
     setValores({
-      ...valores,
+      ...values,
       [chave]: valor, // nome: 'valor'
     });
   }
@@ -25,7 +25,7 @@ function useForm(valoresIniciais) {
   }
 
   return {
-    valores,
+    values,
     handleChange,
     clearForm,
   };
