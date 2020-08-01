@@ -5,36 +5,7 @@ import { Link } from 'react-router-dom';
 import PageDefault from '../../../PageDefault';
 import FormField from '../../../FormField';
 import Button from '../../../Button';
-
-function useForm(valoresIniciais) {
-  const [valores, setValores] = useState(valoresIniciais);
-
-  function setValor(chave, valor) {
-    // Chave é a variável passada (nome, descrição, cor)
-    setValores({
-      ...valores,
-      [chave]: valor, // nome: 'valor'
-    });
-  }
-
-  function handleChange(infosDoEvento) {
-    const { name, value } = infosDoEvento.target;
-    setValor(
-      name,
-      value,
-    );
-  }
-
-  function clearForm() {
-    setValores(valoresIniciais);
-  }
-
-  return {
-    valores,
-    handleChange,
-    clearForm,
-  }
-}
+import useForm from '../../../../hooks/useForm';
 
 function CadastroCategoria() {
   const valoresIniciais = {
@@ -43,7 +14,7 @@ function CadastroCategoria() {
     cor: '#0CA96C',
   };
 
-  const {valores, handleChange, clearForm} = useForm(valoresIniciais)
+  const { valores, handleChange, clearForm } = useForm(valoresIniciais);
 
   const [categorias, setCategorias] = useState([]);
   /*
