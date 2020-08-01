@@ -10,10 +10,12 @@ import categoriasRepositorio from '../../../../Repositories/categorias';
 function CadastroVideo() {
   const history = useHistory();
   const [categorias, setCategorias] = useState([]);
+  const categoryTitles = categorias.map(({ titulo }) => titulo);
+
   const { values, handleChange } = useForm({
     titulo: 'Informe o título',
     url: 'https://www.youtube.com/watch?v=TWy2rxyZLrE',
-    categoria: 'Selecione uma categoria',
+    categoria: '',
   });
 
   useEffect(() => {
@@ -23,16 +25,24 @@ function CadastroVideo() {
         setCategorias(categoriasDoServidor);
       });
   }, []);
-  console.log(categorias);
+
   return (
     <PageDefault>
       <h1>Cadastro de Vídeo</h1>
 
-      <form onSubmit={() => {
+      <form onSubmit={(event) => {
+        event.preventDefault();
+
+        const categoriaEscolhida = categorias.find(
+          (categoria) => {
+            return categoria.titulo === values.categoria;
+          },
+        );
+
         metodoCadastaVideo.create({
           titulo: values.titulo,
           url: values.url,
-          categoriaId: 1,
+          categoriaId: categoriaEscolhida.id,
         })
           .then(() => {
             console.log('Cadastrou com sucesso!');
@@ -41,24 +51,25 @@ function CadastroVideo() {
       }}
       >
         <FormField
-          label="Título do Vídeo"
+          label="Título do Vídeo:"
           name="titulo"
           value={values.titulo}
           onChange={handleChange}
         />
 
         <FormField
-          label="URL"
+          label="URL:"
           name="url"
           value={values.url}
           onChange={handleChange}
         />
 
         <FormField
-          label="Categoria"
+          label="Categoria:"
           name="categoria"
           value={values.categoria}
           onChange={handleChange}
+          suggestions={categoryTitles}
         />
 
         <Button type="submit">
