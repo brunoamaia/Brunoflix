@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 import PageDefault from '../../../PageDefault';
 import FormField from '../../../FormField';
 import Button from '../../../Button';
-import useForm from '../../../../hooks/useForm';
+import useForm from '../../../hooks/useForm';
 
 function CadastroCategoria() {
   const valoresIniciais = {
