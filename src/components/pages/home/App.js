@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 // import { useHistory } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import BannerMain from '../../BannerMain';
 import Carousel from '../../Carousel';
 import PageDefault from '../../PageDefault';
@@ -30,8 +31,16 @@ function Home() {
       </p>
 
       {dadosIniciais.length === 0 && ( // Página para quando nao tem servidor!!
-        <h1> Os dados estão sendo carregados .....</h1>
-        // history.push('/homestatic')
+        <h1>
+          Os dados estão sendo carregados .....
+          <br />
+          Enquanto o nosso amigo Heroku não acorda.
+          Acesse esse conteúdo que deixamos salvo para essas emergencias 😉
+          <br />
+          <Link to="/homestatic">Vamos lá</Link>
+        </h1>
+
+      // history.push('/homestatic')
       )}
 
       {dadosIniciais.map((categoria, indice) => { // Página oega do Servidor!!

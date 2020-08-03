@@ -66,9 +66,9 @@ function HomeStatic() {
       )}
 
       <h1 style={{ textAlign: 'center' }}>
-        Ohh ouuu!!!
+        {/* Ohh ouuu!!!
         <br />
-        {' '}
+        {' '} */}
         O servidor está tirando um cochilo no momento😅
         <br />
         {' '}
