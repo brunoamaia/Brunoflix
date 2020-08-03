@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-// import dadosIniciais from '../../../data/dados_iniciais.json';
+import dadosEstaticos from '../../../data/dados_iniciais.json';
 import BannerMain from '../../BannerMain';
 import Carousel from '../../Carousel';
 import categoriasRepository from '../../../Repositories/categorias';
@@ -27,9 +27,28 @@ function Home() {
         <br />
       </h1>
 
-      {dadosIniciais.length === 0 && (<div>Loading...</div>)}
+      {dadosIniciais.length === 0 && ( // Página para quando nao tem servidor!!
 
-      {dadosIniciais.map((categoria, indice) => {
+        <h1>
+          Ohh ouuu!!!
+          <br />
+          {' '}
+          O servidor está tirando um cochilo no momento😅
+          <BannerMain
+            videoTitle={dadosEstaticos.categorias[0].videos[0].titulo}
+            url={dadosEstaticos.categorias[0].videos[0].url}
+            videoDescription="O que é Front-end? Descubra muita coisa com a Vanessa!!!"
+          />
+          <Carousel
+            ignoreFirstVideo
+            category={dadosEstaticos.categorias[0]}
+          />
+
+        </h1>
+
+      )}
+
+      {dadosIniciais.map((categoria, indice) => { // Página oega do Servidor!!
         if (indice === 0) {
           return (
             <div key={categoria.id}>
