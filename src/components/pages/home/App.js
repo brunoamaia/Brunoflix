@@ -23,11 +23,11 @@ function Home() {
   return (
     <PageDefault paddingAll={0}>
 
-      <h1 style={{ textAlign: 'center' }}>
-        A plataforma etá em desenvolvimento
+      <p style={{ textAlign: 'center' }}>
+        A plataforma etá em desenvolvimento . . .
         {' '}
         <br />
-      </h1>
+      </p>
 
       {dadosIniciais.length === 0 && ( // Página para quando nao tem servidor!!
         <h1> Os dados estão sendo carregados .....</h1>
