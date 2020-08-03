@@ -14,8 +14,12 @@ function Home() {
         O servidor está tirando um cochilo no momento😅
         <br />
         {' '}
-        Mas não se preocupe, aproveite esse consteúdo
+        Mas não se preocupe, aproveite esse consteúdo 😉
       </h1>
+
+      <p style={{ textAlign: 'center' }}>
+        Estamos tentando acordar o servidor. Quando conseguirmos, te levaremos para a Home
+      </p>
 
       <Carousel
         category={dadosEstaticos.categorias[0]}

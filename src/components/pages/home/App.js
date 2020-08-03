@@ -15,6 +15,7 @@ function Home() {
         setDadosIniciais(categoriasComVideos);
       })
       .catch((err) => { // Tratar o Erro
+        // eslint-disable-next-line no-console
         console.log(err.message);
       });
   }, []);
