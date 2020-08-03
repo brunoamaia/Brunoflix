@@ -2,8 +2,8 @@ import React, { useEffect, useState } from 'react';
 import { useHistory } from 'react-router-dom';
 import BannerMain from '../../BannerMain';
 import Carousel from '../../Carousel';
-import categoriasRepository from '../../../Repositories/categorias';
 import PageDefault from '../../PageDefault';
+import categoriasRepository from '../../../Repositories/categorias';
 
 function Home() {
   const [dadosIniciais, setDadosIniciais] = useState([]);

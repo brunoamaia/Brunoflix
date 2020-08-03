@@ -1,11 +1,66 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
+import { useHistory } from 'react-router-dom';
 import dadosEstaticos from '../../../data/dados_iniciais.json';
 import Carousel from '../../Carousel';
 import PageDefault from '../../PageDefault';
+import categoriasRepository from '../../../Repositories/categorias';
 
-function Home() {
+/* const [dadosIniciais, setDadosIniciais] = useState([]);
+function WakeUp() {
+  useEffect(() => {
+    categoriasRepository.getAllWithVideos()
+      .then((categoriasComVideos) => {
+        setDadosIniciais(categoriasComVideos);
+      })
+      .catch((err) => { // Tratar o Erro
+        // eslint-disable-next-line no-console
+        console.log(err.message);
+      });
+  }, []);
+
+  Timer()
+  return (
+    console.log('sd')
+  );
+}
+
+function Timer() {
+  const [count, setCount] = useState(0);
+  const countRef = useRef(count);
+  countRef.current = count;
+
+  const getCountTimeout = () => {
+    setTimeout(() => {
+      setTimeoutCount(countRef.current);
+      WakeUp()
+    }, 2000);
+  };
+
+  return (
+    console.log('object')
+  );
+} */
+
+function HomeStatic() {
+  const [dadosIniciais, setDadosIniciais] = useState([]);
+  const history = useHistory();
+  useEffect(() => {
+    categoriasRepository.getAllWithVideos()
+      .then((categoriasComVideos) => {
+        setDadosIniciais(categoriasComVideos);
+      })
+      .catch((err) => { // Tratar o Erro
+        // eslint-disable-next-line no-console
+        console.log(err.message);
+      });
+  }, []);
+
   return (
     <PageDefault paddingAll={0}>
+
+      {dadosIniciais.length !== 0 && ( // Página para quando nao tem servidor!!
+        history.push('/')
+      )}
 
       <h1 style={{ textAlign: 'center' }}>
         Ohh ouuu!!!
@@ -18,7 +73,7 @@ function Home() {
       </h1>
 
       <p style={{ textAlign: 'center' }}>
-        Estamos tentando acordar o servidor. Quando conseguirmos, te levaremos para a Home
+        Tente acessar a Home após um tempo.
       </p>
 
       <Carousel
@@ -49,4 +104,4 @@ function Home() {
   );
 }
 
-export default Home;
+export default HomeStatic;
