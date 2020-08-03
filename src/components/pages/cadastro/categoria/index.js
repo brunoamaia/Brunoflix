@@ -58,7 +58,11 @@ function CadastroCategoria() {
         {values.nome}
       </h1>
 
-      <form onSubmit={function handleSubmit(infosDoEvento) {
+      <form onSubmit={function handleSubmit() {
+      //<form onSubmit={function handleSubmit(infosDoEvento) {
+        // eslint-disable-next-line no-alert
+        alert('Função temporariamente desabilitada!');
+        /*
         infosDoEvento.preventDefault();
         setCategorias([
           ...categorias, // Os 3 pontos servem para mostrar todos os dados que estão no array
@@ -66,6 +70,7 @@ function CadastroCategoria() {
         ]);
 
         clearForm();
+        */
       }}
       >
 

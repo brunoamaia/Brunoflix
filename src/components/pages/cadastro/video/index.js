@@ -1,14 +1,15 @@
 import React, { useEffect, useState } from 'react';
-import { Link, useHistory } from 'react-router-dom';
+import { Link } from 'react-router-dom';
+// import { Link, useHistory } from 'react-router-dom';
 import PageDefault from '../../../PageDefault';
 import useForm from '../../../hooks/useForm';
 import FormField from '../../../FormField';
 import Button from '../../../Button';
-import metodoCadastaVideo from '../../../../Repositories/videos';
+// import metodoCadastaVideo from '../../../../Repositories/videos';
 import categoriasRepositorio from '../../../../Repositories/categorias';
 
 function CadastroVideo() {
-  const history = useHistory();
+  // const history = useHistory();
   const [categorias, setCategorias] = useState([]);
   const categoryTitles = categorias.map(({ titulo }) => titulo);
 
@@ -32,7 +33,9 @@ function CadastroVideo() {
 
       <form onSubmit={(event) => {
         event.preventDefault();
-
+        // eslint-disable-next-line no-alert
+        alert('Função temporariamente desabilitada!');
+        /*
         const categoriaEscolhida = categorias.find(
           (categoria) => categoria.titulo === values.categoria,
         );
@@ -45,6 +48,7 @@ function CadastroVideo() {
           .then(() => {
             history.push('/');
           });
+          */
       }}
       >
         <FormField

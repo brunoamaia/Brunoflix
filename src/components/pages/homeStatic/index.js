@@ -5,7 +5,8 @@ import Carousel from '../../Carousel';
 import PageDefault from '../../PageDefault';
 import categoriasRepository from '../../../Repositories/categorias';
 
-/* const [dadosIniciais, setDadosIniciais] = useState([]);
+/*
+const [dadosIniciais, setDadosIniciais] = useState([]);
 function WakeUp() {
   useEffect(() => {
     categoriasRepository.getAllWithVideos()
@@ -18,10 +19,11 @@ function WakeUp() {
       });
   }, []);
 
-  Timer()
   return (
-    console.log('sd')
-  );
+    // eslint-disable-next-line no-console
+    console.log('dadosIniciais')
+    //setTimeout(() => { WakeUp(), 1000 }),
+  ),
 }
 
 function Timer() {
@@ -54,6 +56,7 @@ function HomeStatic() {
         console.log(err.message);
       });
   }, []);
+  // WakeUp();
 
   return (
     <PageDefault paddingAll={0}>

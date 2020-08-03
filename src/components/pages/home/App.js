@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { useHistory } from 'react-router-dom';
+// import { useHistory } from 'react-router-dom';
 import BannerMain from '../../BannerMain';
 import Carousel from '../../Carousel';
 import PageDefault from '../../PageDefault';
@@ -7,7 +7,7 @@ import categoriasRepository from '../../../Repositories/categorias';
 
 function Home() {
   const [dadosIniciais, setDadosIniciais] = useState([]);
-  const history = useHistory();
+  // const history = useHistory();
 
   useEffect(() => {
     categoriasRepository.getAllWithVideos()
@@ -30,7 +30,8 @@ function Home() {
       </h1>
 
       {dadosIniciais.length === 0 && ( // Página para quando nao tem servidor!!
-        history.push('/homestatic')
+        <h1> Os dados estão sendo carregados .....</h1>
+        // history.push('/homestatic')
       )}
 
       {dadosIniciais.map((categoria, indice) => { // Página oega do Servidor!!
@@ -63,3 +64,19 @@ function Home() {
 }
 
 export default Home;
+
+/*
+function Redirect() {
+  console.log(`Dados importados  = ${dadosImport}`);
+  if (dadosImport === []) {
+    redirecionar = true;
+  }
+}
+
+function timeout(delay) {
+  setTimeout(() => {
+    Redirect();
+  }, delay);
+}
+timeout(1000); // for 1 sec delay
+*/
