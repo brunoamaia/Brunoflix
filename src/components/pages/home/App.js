@@ -26,7 +26,9 @@ function Home() {
 
       <p style={{ textAlign: 'center' }}>
         A plataforma etá em desenvolvimento . . .
-        {' '}
+        <Link to="/homestatic" style={{ color: '#141414' }}>
+          Página secreta
+        </Link>
         <br />
       </p>
 

@@ -45,7 +45,6 @@ function Timer() {
 
 function HomeStatic() {
   const [dadosIniciais, setDadosIniciais] = useState([]);
-  const history = useHistory();
   useEffect(() => {
     categoriasRepository.getAllWithVideos()
       .then((categoriasComVideos) => {
@@ -60,10 +59,6 @@ function HomeStatic() {
 
   return (
     <PageDefault paddingAll={0}>
-
-      {dadosIniciais.length !== 0 && ( // Página para quando nao tem servidor!!
-        history.push('/')
-      )}
 
       <h1 style={{ textAlign: 'center' }}>
         {/* Ohh ouuu!!!

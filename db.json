@@ -11,7 +11,7 @@
       },
       {
         "id": 2,
-        "titulo": "Outras culturas",
+        "titulo": "Viagem",
         "cor": "#00C86F",
         "link_extra": {
           "text": "Pessoas conhecendo outros paises",
@@ -29,7 +29,7 @@
       },
       {
         "id": 4,
-        "titulo": "educação financeira",
+        "titulo": "Educação financeira",
         "cor": "orange",
         "link_extra": {
           "text": "Informações para valorizar seu rico dinheirinho",
@@ -109,7 +109,7 @@
       },
       {
         "id": 11,
-        "categoriaId": 2,
+        "categoriaId": 1,
         "titulo": "LUCAS INUTILISMO escrotiza o Dublaralho!",
         "url": "https://www.youtube.com/watch?v=3441yUcjD0w"
       },
