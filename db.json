@@ -2,43 +2,47 @@
     "categorias": [
       {
         "id": 1,
-        "titulo": "Front End",
+        "titulo": "Humor",
         "cor": "#6BD1FF",
         "link_extra": {
-          "text": "Formação de Front End na Alura",
-          "url": "https://www.alura.com.br/cursos-online-front-end"
+          "text": "Piadas e outras coisas de Humor",
+          "url": ""
         }
       },
       {
         "id": 2,
-        "titulo": "Back End",
+        "titulo": "Outras culturas",
         "cor": "#00C86F",
         "link_extra": {
-          "text": "Cursos de Back End na Alura",
-          "url": "https://www.alura.com.br/cursos-online-programacao"
+          "text": "Pessoas conhecendo outros paises",
+          "url": ""
         }
       },
       {
         "id": 3,
-        "titulo": "Data Science e Inteligência Artificial",
-        "cor": "#9cd33b",
+        "titulo": "Games",
+        "cor": "#FF0000",
         "link_extra": {
-          "text": "Cursos de Data Science na Alura",
-          "url": "https://www.alura.com.br/cursos-online-mobile"
+          "text": "Área sobre alguns jogos",
+          "url": ""
         }
       },
       {
         "id": 4,
-        "titulo": "Filmes",
-        "cor": "orange"
+        "titulo": "educação financeira",
+        "cor": "orange",
+        "link_extra": {
+          "text": "Informações para valorizar seu rico dinheirinho",
+          "url": ""
+        }
       },
       {
         "id": 5,
-        "titulo": "Games",
-        "cor": "red",
+        "titulo": "Desenvolvimento pessoal",
+        "cor": "#9cd33b",
         "link_extra": {
-          "text": "Formação de Jogos na Alura",
-          "url": "https://www.alura.com.br/cursos-online-front-end"
+          "text": "Procure a sua melhor versão de você mesmo",
+          "url": ""
         }
       }
     ],
@@ -46,171 +50,352 @@
       {
         "id": 1,
         "categoriaId": 1,
-        "titulo": "SEO com React",
-        "url": "https://www.youtube.com/watch?v=c8mVlakBESE"
+        "titulo": "QUANDO OS NOSSOS AVÓS ENTRAM NA INTERNET | Tio Sérgio é Coisa Nossa",
+        "url": "https://www.youtube.com/watch?v=e4ePc8ZxeI0"
       },
       {
         "id": 2,
         "categoriaId": 1,
-        "titulo": "O que faz uma desenvolvedora front-end? #HipstersPontoTube",
-        "url": "https://www.youtube.com/watch?v=ZY3-MFxVdEw"
+        "titulo": "AFONSO PADILHA - A PIOR PARTE DE SER POBRE",
+        "url": "https://www.youtube.com/watch?v=DO5sJ-LLxcE"
       },
       {
         "id": 3,
         "categoriaId": 1,
-        "titulo": "Componentização com VanillaJS #AluraMais",
-        "url": "https://www.youtube.com/watch?v=LatCKpcOMak"
+        "titulo": "NÃO PODE RIR! com Lucas Inutilismo, Cellbit, Zelune e Matheus Canella",
+        "url": "https://www.youtube.com/watch?v=4ZcZdprcE0k"
       },
       {
         "id": 4,
         "categoriaId": 1,
-        "titulo": "Pare de chutar e aprenda a display: inline #01",
-        "url": "https://www.youtube.com/watch?v=5PS6ku8NzIE"
+        "titulo": "Hermanoteu na Terra de Godah HD - Os melhores do mundo",
+        "url": "https://www.youtube.com/watch?v=g4Nb7IvJG5I"
       },
       {
         "id": 5,
         "categoriaId": 1,
-        "titulo": "Template String: Interpolando strings com JavaScript #AluraMais",
-        "url": "https://www.youtube.com/watch?v=ORI_HTXaIw0"
+        "titulo": "O DIA EM QUE NÓS FICAMOS DE QUARENTENA",
+        "url": "https://www.youtube.com/watch?v=3wPiq6Ggpqs"
       },
       {
         "id": 6,
         "categoriaId": 1,
-        "titulo": "Qual é a melhor linguagem de programação? #HipstersPontoTube",
-        "url": "https://www.youtube.com/watch?v=Uh-GNH-t89w"
+        "titulo": "REVEILLON DOS HUMORISTAS - STAND UP",
+        "url": "https://www.youtube.com/watch?v=BgXrMdt2TbM"
       },
       {
         "id": 7,
         "categoriaId": 1,
-        "titulo": "Novidades do Angular v9",
-        "url": "https://www.youtube.com/watch?v=34uHo7hFmG0"
+        "titulo": "Trocadilhos - Barbixas!!",
+        "url": "https://www.youtube.com/watch?v=5DMTArzy8pU"
       },
       {
         "id": 8,
-        "categoriaId": 2,
-        "titulo": "PERCURSO em NÍVEL em ÁRVORE BINÁRIA | Estruturas de Dados #14",
-        "url": "https://www.youtube.com/watch?v=UOK7nS2E9xM"
+        "categoriaId": 1,
+        "titulo": "Marcus Cirillo - Minha Primeira Vez na Praia",
+        "url": "https://www.youtube.com/watch?v=ORH_0X9ho5o"
       },
       {
         "id": 9,
-        "categoriaId": 2,
-        "titulo": "Coders4Tips - S01E04: GitHub CLI - Uma Nova Experiência no Github!",
-        "url": "https://www.youtube.com/watch?v=6o6-bKOZOEY"
+        "categoriaId": 1,
+        "titulo": "FILA DE PIADAS - BRINCADEIRAS DE INFÂNCIA - #62",
+        "url": "https://www.youtube.com/watch?v=VrC0cmPVmq8"
       },
       {
         "id": 10,
-        "categoriaId": 2,
-        "titulo": "Programei 4 robôs que criam vídeos para mim no YouTube",
-        "url": "https://www.youtube.com/watch?v=kjhu1LEmRpY"
+        "categoriaId": 1,
+        "titulo": "THIAGO VENTURA - TIGAS E OS 300 DE ESPARTA (versão filme 300)",
+        "url": "https://www.youtube.com/watch?v=JBFRkJUAjyQ"
       },
       {
         "id": 11,
         "categoriaId": 2,
-        "titulo": "API: Dicionário do Programador",
-        "url": "https://www.youtube.com/watch?v=vGuqKIRWosk"
+        "titulo": "LUCAS INUTILISMO escrotiza o Dublaralho!",
+        "url": "https://www.youtube.com/watch?v=3441yUcjD0w"
       },
+
+
+
+
       {
         "id": 12,
         "categoriaId": 2,
-        "titulo": "Usando Git Direito",
-        "url": "https://www.youtube.com/watch?v=6OokP-NE49k"
+        "titulo": "TOUR NA RUSSIA",
+        "url": "https://www.youtube.com/watch?v=ljVZT25yMck&list=PL7biWkm0dNqYjz-o9dAwHAnbuqi20jJP5"
       },
       {
         "id": 13,
-        "categoriaId": 3,
-        "titulo": "nteligência Artificial detecta humanos ATRAVÉS de paredes!?",
-        "url": "https://www.youtube.com/watch?v=JWuS6q9EYAo"
+        "categoriaId": 2,
+        "titulo": "TAIWAN COMPUTEX 2019",
+        "url": "https://www.youtube.com/watch?v=vjjDS1U17FM&list=PLxxmCvgp90IpghbcR6vuDvzTxK_4gZtRC"
       },
       {
         "id": 14,
-        "categoriaId": 3,
-        "titulo": "Inteligência Artificial destruindo no dinossauro da Google! (Rede Neural)",
-        "url": "https://www.youtube.com/watch?v=NZlIYr1slAk"
+        "categoriaId": 2,
+        "titulo": "Como é MORAR NA AUSTRÁLIA (VIDA REAL) - Vamos Fugir Blog",
+        "url": "https://www.youtube.com/watch?v=d55RjVJXFGM"
       },
       {
         "id": 15,
-        "categoriaId": 3,
-        "titulo": "Inteligência Artificial aprendendo a DIRIGIR!! (Deep Cars)",
-        "url": "https://www.youtube.com/watch?v=gnfkfUQvKDw"
+        "categoriaId": 2,
+        "titulo": "TOUR NA ISLÂNDIA",
+        "url": "https://www.youtube.com/watch?v=shfcTXV-HBw&list=PL7biWkm0dNqZIEy9EQW_AANk0xk0Z805e&index=1"
       },
       {
         "id": 16,
-        "categoriaId": 3,
-        "titulo": "Inteligência Artificial ESTACIONANDO carros!",
-        "url": "https://www.youtube.com/watch?v=r8KWciNmEGw"
+        "categoriaId": 2,
+        "titulo": " Dia e noite em Istambul",
+        "url": "https://www.youtube.com/watch?v=y6-ME26gY5Y&list=PLlZmBpUeOaNDmXjjk5tQBt6iiEfApmlHF"
       },
       {
         "id": 17,
-        "categoriaId": 3,
-        "titulo": "Teste de Turing",
-        "url": "https://www.youtube.com/watch?v=BaPGU4JWa34"
+        "categoriaId": 2,
+        "titulo": "5 dias no CHILE - NEVE, TOUR PELO APÊ ALUGADO e mais",
+        "url": "https://www.youtube.com/watch?v=4iDaz_0Zt9w"
       },
       {
         "id": 18,
-        "categoriaId": 3,
-        "titulo": "O que é Data Science?",
-        "url": "https://www.youtube.com/watch?v=5b9Z8toVaAU&t=9s"
+        "categoriaId": 2,
+        "titulo": "TOUR EM ISRAEL",
+        "url": "https://www.youtube.com/watch?v=wmsCH0lhY9k&list=PL7biWkm0dNqbBnLYw6mXCYcWXKIYNFN2v&index=1"
       },
       {
         "id": 19,
-        "categoriaId": 3,
-        "titulo": "Melhor forma de aprender Python",
-        "url": "https://www.youtube.com/watch?v=Gojqw9BQ5qY"
+        "categoriaId": 2,
+        "titulo": "VIETNÃ - Dicas de Hanói e Halong Bay",
+        "url": "https://www.youtube.com/watch?v=aG3vU4SLHeI"
       },
       {
         "id": 20,
-        "categoriaId": 3,
-        "titulo": "Como ingressar no mercado de Data Science?",
-        "url": "https://www.youtube.com/watch?v=gxyjGmOV540"
+        "categoriaId": 2,
+        "titulo": "COREIA do NORTE",
+        "url": "https://www.youtube.com/watch?v=Ppa246TLFOY&list=PLlZmBpUeOaND2bunzmLmANorY_VTglA6s"
       },
-      
       {
         "id": 21,
-        "categoriaId": 4,
-        "titulo": "Interestellar",
-        "url": "https://www.youtube.com/watch?v=frD_IiY_A3E"
+        "categoriaId": 2,
+        "titulo": "TOUR NA ITÁLIA",
+        "url": "https://www.youtube.com/watch?v=UnX32TycO0c&list=PL7biWkm0dNqb1dLOu8hLnSAN9MU7HpqvX"
       },
       {
         "id": 22,
-        "categoriaId": 4,
-        "titulo": "Gattaca",
-        "url": "https://www.youtube.com/watch?v=Dl0tYLbrhhs"
+        "categoriaId": 2,
+        "titulo": "ST. PATRICK`S DAY NA IRLANDA",
+        "url": "https://www.youtube.com/watch?v=PQltSCOnSS4&list=PLlZmBpUeOaNAY8WKHPjjArpH8v-kUZtPN"
       },
+
+
+
+
       {
         "id": 23,
-        "categoriaId": 4,
-        "titulo": "A Chegada",
-        "url": "https://www.youtube.com/watch?v=rNciXGzYZms"
+        "categoriaId": 3,
+        "titulo": "SER GAMER...(SOMOS 3 MILHÕES)",
+        "url": "https://www.youtube.com/watch?v=j-wH8EPJ03U"
       },
       {
         "id": 24,
-        "categoriaId": 4,
-        "titulo": "Feitiço do Tempo",
-        "url": "https://www.youtube.com/watch?v=zi8d69P9NvI"
+        "categoriaId": 3,
+        "titulo": "SER GAMER 2 : SOMOS 4 MILHÕES !!",
+        "url": "https://www.youtube.com/watch?v=18DLBcMg_5k"
       },
       {
         "id": 25,
-        "categoriaId": 5,
-        "titulo": "Final Fantasy 7",
-        "url": "https://www.youtube.com/watch?v=I_ATSCTnUD8"
+        "categoriaId": 3,
+        "titulo": "Trailer Cinemático de World of Warcraft: Battle for Azeroth",
+        "url": "https://www.youtube.com/watch?v=G7QZR2OWLR0"
       },
       {
         "id": 26,
-        "categoriaId": 5,
-        "titulo": "Assassins Creed Valhalla",
-        "url": "https://www.youtube.com/watch?v=KDfdjB9uL0U"
+        "categoriaId": 3,
+        "titulo": "The Last of Us - Trailer Oficial",
+        "url": "https://www.youtube.com/watch?v=kE7li_u1nmg"
       },
       {
         "id": 27,
-        "categoriaId": 5,
-        "titulo": "God of War 4",
-        "url": "https://www.youtube.com/watch?v=FyIwEFXOcaE"
+        "categoriaId": 3,
+        "titulo": "Overwatch 2 Cinemática de Anúncio| “Zero Hour”",
+        "url": "https://www.youtube.com/watch?v=GubjHz5--6M"
       },
       {
         "id": 28,
+        "categoriaId": 3,
+        "titulo": "Curta de animação de Overwatch | 'Dragons'",
+        "url": "https://www.youtube.com/watch?v=cBkoJcWHw6w"
+      },
+      {
+        "id": 29,
+        "categoriaId": 3,
+        "titulo": "Curta animado de Overwatch | “Honor and Glory”",
+        "url": "https://www.youtube.com/watch?v=M9xZ1nT8chQ"
+      },
+      {
+        "id": 30,
+        "categoriaId": 3,
+        "titulo": "Dark Souls 3 [Review] - TecMundo Games",
+        "url": "https://www.youtube.com/watch?v=AfbTy-UE9fk"
+      },
+      {
+        "id": 31,
+        "categoriaId": 3,
+        "titulo": "God of War - Trailer",
+        "url": "https://www.youtube.com/watch?v=FyIwEFXOcaE"
+      },
+      {
+        "id": 32,
+        "categoriaId": 3,
+        "titulo": "Watch Dogs 2",
+        "url": "https://www.youtube.com/watch?v=qp7zjfBS5p8"
+      },
+      {
+        "id": 33,
+        "categoriaId": 3,
+        "titulo": "Grand Theft Auto V",
+        "url": "https://www.youtube.com/watch?v=gHtKJ9cWCaA"
+      },
+
+
+
+
+
+      {
+        "id": 34,
+        "categoriaId": 4,
+        "titulo": "COMO SOBRAR DINHEIRO: 5 super dicas que funcionam",
+        "url": "https://www.youtube.com/watch?v=Lb-dn0C5PXg"
+      },
+      {
+        "id": 35,
+        "categoriaId": 4,
+        "titulo": "GANHE DINHEIRO EM 2020! TOP 6 investimentos do ano! De Tesouro a Fundos Imobiliários",
+        "url": "https://www.youtube.com/watch?v=-HJn3vgOx_M"
+      },
+      {
+        "id": 36,
+        "categoriaId": 4,
+        "titulo": "NOME SUJO? COMO acabar com DÍVIDA DE MIL pagando CEM REAIS!",
+        "url": "https://www.youtube.com/watch?v=39VaaYYMBWA"
+      },
+      {
+        "id": 37,
+        "categoriaId": 4,
+        "titulo": "3 INVESTIMENTOS SEGUROS PARA INICIANTES (COMECE COM POUCO DINHEIRO)",
+        "url": "https://www.youtube.com/watch?v=8Dd1M9r_MKk"
+      },
+      {
+        "id": 38,
+        "categoriaId": 4,
+        "titulo": "4 MENTIRAS QUE OS POBRES ACREDITAM SOBRE OS RICOS (TODO RICO É LADRÃO?)",
+        "url": "https://www.youtube.com/watch?v=mITzyglX89c"
+      },
+      {
+        "id": 39,
+        "categoriaId": 4,
+        "titulo": "Controle FINANCEIRO em 6 PASSOS!",
+        "url": "https://www.youtube.com/watch?v=HNK5hriWVco"
+      },
+      {
+        "id": 40,
+        "categoriaId": 4,
+        "titulo": "Organize suas finanças em 4 passos!",
+        "url": "https://www.youtube.com/watch?v=WvW-jNG_2DA"
+      },
+      {
+        "id": 41,
+        "categoriaId": 4,
+        "titulo": "7 APLICATIVOS de FINANÇAS para dar um jeito na sua VIDA! Agora VOCÊ não tem mais desculpas!",
+        "url": "https://www.youtube.com/watch?v=W3nWp84eEXM"
+      },
+      {
+        "id": 42,
+        "categoriaId": 4,
+        "titulo": "ORGANIZE a sua VIDA FINANCEIRA de uma vez por todas e comece a JUNTAR DINHEIRO AGORA! #Ep01",
+        "url": "https://www.youtube.com/watch?v=4eIRLawDYg0"
+      },
+      {
+        "id": 43,
+        "categoriaId": 4,
+        "titulo": "10 GOLPES PRA VOCÊ NÃO CAIR",
+        "url": "https://www.youtube.com/watch?v=sFqx1xzgtFE"
+      },
+      {
+        "id": 44,
+        "categoriaId": 4,
+        "titulo": "PIRÂMIDE FINANCEIRA. ATÉ A GENTE JÁ CAIU!",
+        "url": "https://www.youtube.com/watch?v=rpwVeOpwW5U"
+      },
+
+
+
+
+
+      {
+        "id": 45,
         "categoriaId": 5,
-        "titulo": "Resident Evil 8",
-        "url": "https://www.youtube.com/watch?v=JSapXD9vxYA"
+        "titulo": "3 Dicas pra você ter FOCO!",
+        "url": "https://www.youtube.com/watch?v=WgZS_ZCpDlo"
+      },
+      {
+        "id": 46,
+        "categoriaId": 5,
+        "titulo": "Amor e Solidão ",
+        "url": "https://www.youtube.com/watch?v=uwghYxiY5jc"
+      },
+      {
+        "id": 47,
+        "categoriaId": 5,
+        "titulo": "O que significa o autocontrole? Para que serve o autocontrole?",
+        "url": "https://www.youtube.com/watch?v=HXXe0b2799s"
+      },
+      {
+        "id": 48,
+        "categoriaId": 5,
+        "titulo": "Purificar Karmas, Conhecer a Mente e Saber Usá-la",
+        "url": "https://www.youtube.com/watch?v=80HyDP5ESqw"
+      },
+      {
+        "id": 49,
+        "categoriaId": 5,
+        "titulo": "Faça a vida acontecer do seu jeito",
+        "url": "https://www.youtube.com/watch?v=7SzF4pMHaNc"
+      },
+      {
+        "id": 50,
+        "categoriaId": 5,
+        "titulo": "Iluminado é aquele que pergunta: Momento Zen com plateia",
+        "url": "https://www.youtube.com/watch?v=FgyCJfdavjI"
+      },
+      {
+        "id": 51,
+        "categoriaId": 5,
+        "titulo": "O Melhor Livro do MUNDO",
+        "url": "https://www.youtube.com/watch?v=qGJbIV6-Z2Q"
+      },
+      {
+        "id": 52,
+        "categoriaId": 5,
+        "titulo": "INTERNET: TODOS FALAM, ALGUÉM OUVE?",
+        "url": "https://www.youtube.com/watch?v=b9AT__8RmCA"
+      },
+      {
+        "id": 53,
+        "categoriaId": 5,
+        "titulo": "O Cérebro Apaixonado",
+        "url": "https://www.youtube.com/watch?v=q5pfKoSYquE"
+      },
+      {
+        "id": 54,
+        "categoriaId": 5,
+        "titulo": "Autoconhecimento e o eu imaterial",
+        "url": "https://www.youtube.com/watch?v=l-Pc7PqX68g"
+      },
+      {
+        "id": 55,
+        "categoriaId": 5,
+        "titulo": "Ouvir e entender: expansão da mente no caminho iluminado",
+        "url": "https://www.youtube.com/watch?v=oFlANYrbo-Q"
       }
+
+      
     ]
   }
